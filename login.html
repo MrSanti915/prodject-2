@@ -3,58 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SwiftSecure — Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./stlye.css">
 </head>
-<body>
-    <div class="login">
-       <div class="log">
-         <div class="log1">
-            <h1>Welcome back</h1>
-        </div>
-
-        <div class="log2">
-            <p>Sign in to your SwiftSecure account</p>
-        </div>
-
-        <div class="form">
-            <label for="Email" >Email</label> <br>
-            <input type="text" name="Email" placeholder="you@gmail.com" required> <br> <br>
-            <label for="Password" >Password</label> <br>
-            <input type="password" name="Password" placeholder="........" required> <br> <br>
-            <div class="check">
-              <label class="lab">
-                <input type="checkbox" class="ce">
-                <p class="re">Remember me</p>
-            </label>
-             <div class="forgot">
-               <a href="./reset.html">
-                 <p>Forgot password?</p>
-               </a>
-            </div>
+<body class="auth-page">
+    <main class="auth-shell">
+        <section class="auth-card reveal">
+            <div class="brand">
+                <div class="brand-mark">S</div>
+                <span>SwiftSecure</span>
             </div>
 
-            <div class="but">
-                <button class="button2">Log in</button>
-            </div>
+            <header class="auth-header">
+                <h1>Welcome back</h1>
+                <p>Sign in to continue to your workspace.</p>
+            </header>
 
-            <div class="Sign">
-                <div class="sign2">
-                    <div>
-                    <p>Don't have an account?</p>
+            <form class="auth-form" action="#" method="post">
+                <label for="email">Email</label>
+                <input id="email" type="email" name="Email" placeholder="you@company.com" required>
+
+                <label for="password">Password</label>
+                <input id="password" type="password" name="Password" placeholder="Your password" required>
+
+                <div class="auth-row">
+                    <label class="remember">
+                        <input type="checkbox" class="ce">
+                        <span>Remember me</span>
+                    </label>
+                    <a class="auth-link" href="./reset.html">Forgot password?</a>
                 </div>
 
-                <div class="sign3">
-                    <a href="./signup.html">
-                        <p>Sign up</p>
-                    </a>
-                </div>
-                </div>
+                <button class="btn primary" type="submit">Log in</button>
+            </form>
 
-                <script src="script.js"></script>
+            <div class="auth-footer">
+                <span>Don’t have an account?</span>
+                <a class="auth-link" href="./signup.html">Sign up</a>
             </div>
-        </div>
-       </div>
-    </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>

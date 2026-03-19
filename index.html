@@ -3,37 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SwiftSecure — Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./stlye.css">
 </head>
-<body>
-   <!-- begining  -->
+<body class="landing-page">
+    <main class="landing">
+        <nav class="topbar">
+            <div class="brand">
+                <div class="brand-mark">S</div>
+                <span>SwiftSecure</span>
+            </div>
+            <div class="topbar-actions">
+                <a class="btn ghost" href="./login.html">Log in</a>
+                <a class="btn primary" href="./signup.html">Create account</a>
+            </div>
+        </nav>
 
-   <div class="hero">
-   <div class="her">
-     <div class="hero1">
-        <h1>Swift secure</h1>
-    </div>
+        <section class="hero">
+            <div class="hero-text reveal">
+                <p class="eyebrow">Authentication done right</p>
+                <h1>Fast, elegant security for modern teams.</h1>
+                <p class="subtext">Ship secure access in minutes with a clean, reliable experience for your users.</p>
+                <div class="cta">
+                    <a class="btn primary" href="./login.html">Log in</a>
+                    <a class="btn ghost" href="./signup.html">Create account</a>
+                </div>
+                <div class="trust">
+                    <span>Trusted by 12,000+ teams</span>
+                    <span>99.99% uptime</span>
+                </div>
+            </div>
+            <div class="hero-card reveal">
+                <div class="card-header">
+                    <p>Security Snapshot</p>
+                    <span class="badge">Live</span>
+                </div>
+                <div class="card-metric">
+                    <h3>256‑bit</h3>
+                    <p>Encryption in transit</p>
+                </div>
+                <div class="card-list">
+                    <div>
+                        <span>Multi‑factor ready</span>
+                        <strong>Enabled</strong>
+                    </div>
+                    <div>
+                        <span>Suspicious logins</span>
+                        <strong>0 today</strong>
+                    </div>
+                    <div>
+                        <span>Compliance</span>
+                        <strong>SOC 2</strong>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <div class="hero2">
-      <p>Fast, secure authentication for your applications.</p>
-    </div>
-   </div>
-
-   <div class="bot">
-    <div class="btn">
-        <a href="./login.html">
-             <button class="button1">Log in</button>
-        </a>
-       
-    </div>
-
-    <div>
-        <a href="./signup.html">
-            <button  class="button1">Create account</button>
-        </a>
-    </div>
-   </div>
-   </div>
+        <section class="features">
+            <div class="feature-card reveal">
+                <h4>Minimal onboarding</h4>
+                <p>Clear flows and thoughtful defaults keep users moving with confidence.</p>
+            </div>
+            <div class="feature-card reveal">
+                <h4>Secure by design</h4>
+                <p>Encryption, monitoring, and audit trails built into every session.</p>
+            </div>
+            <div class="feature-card reveal">
+                <h4>Fast to integrate</h4>
+                <p>Drop‑in UI and reliable APIs to get you to production quickly.</p>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
